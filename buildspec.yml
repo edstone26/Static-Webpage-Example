@@ -6,3 +6,4 @@ phases:
       - aws s3 sync . s3://www.csce412edstone26.me --delete
       - echo "Invalidating CloudFront cache..."
       - aws cloudfront create-invalidation --distribution-id E13V6EJA39K4AH --paths "/*"
+      - echo "Deployment completed successfully"
